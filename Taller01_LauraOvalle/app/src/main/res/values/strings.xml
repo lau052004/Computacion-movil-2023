@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Taller1_LauraOvalle</string>
+    <string name="the_countries_app">The Countries APP</string>
+    <string name="select_a_region">Select a region:</string>
+    <string name="list_the_countries">List the countries:</string>
+    <string name="llamada">llamada</string>
+</resources>
