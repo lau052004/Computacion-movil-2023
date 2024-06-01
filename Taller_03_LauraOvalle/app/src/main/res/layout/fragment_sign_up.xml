@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="999dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ProfilePhoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@color/material_dynamic_neutral95"
+                android:contentDescription="@string/img_desc" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/gallery_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="50"
+                android:scaleType="centerInside"
+                android:src="@mipmap/galeria"
+                android:contentDescription="@string/img_desc" />
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="50"
+                android:scaleType="centerInside"
+                android:src="@mipmap/camara2"
+                android:contentDescription="@string/img_desc" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/LastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/apellido"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/celular"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Identification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/nro_identificaci_n"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/latitud"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/latitud"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="28dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/longitud"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="@string/longitud"
+                android:inputType="phone"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/SignupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+</FrameLayout>
